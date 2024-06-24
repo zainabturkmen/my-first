@@ -6,7 +6,7 @@ import styled from 'styled-components'
 function App() {
 
   return (
-    <h1>Hello App</h1>
+    <h1>Hello </h1>
   )
 }
 
