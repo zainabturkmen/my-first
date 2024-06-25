@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Navbar = () => {
   return (
-    <header>
+    <Wrapper>
       <div class="logo-and-toggle-div">
         <div class="logo">
           <img src="img/image.png" alt="" />
@@ -38,13 +38,16 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </Wrapper>
   );
 };
 
 const Wrapper = styled.header`
-  
-`
-
+  .logo-and-toggle-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
 
 export default Navbar;
