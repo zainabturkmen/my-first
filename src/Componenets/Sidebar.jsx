@@ -3,12 +3,8 @@ import { useState } from 'react';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(true);
-    
-  return (
-    <div>
-      
-    </div>
-  );
+
+  return <div>Sidebar</div>;
 }
 
 export default Sidebar;
