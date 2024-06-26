@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const Wrapper = styled.header`
   .navbar {
-    padding: 0.4em 5em;
+    padding: 0em 5em;
     box-shadow: var(--bs);
   }
 
