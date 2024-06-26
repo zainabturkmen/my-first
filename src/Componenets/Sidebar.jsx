@@ -101,6 +101,7 @@ const SidebarContainer = styled.div`
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;
+    box-shadow: var(--bs);
   }
   .show-sidebar {
     transform: translate(0);
