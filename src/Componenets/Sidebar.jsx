@@ -12,27 +12,39 @@ const Sidebar = () => {
       <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
         <div className="sidebar-header">
           <img src={logo} className="logo" alt="zainab logo" />
-          <button type="button" className="close-btn">
+          <button
+            type="button"
+            className="close-btn"
+            onClick={() => setIsOpen(!isOpen)}
+          >
             <FaTimes />
           </button>
         </div>
         <ul className="links">
           <li>
-            <a href="index.html" class="active">
+            <a href="#home" onClick={() => setIsOpen(!isOpen)}>
               home
             </a>
           </li>
           <li>
-            <a href="index.html#services">Services</a>
+            <a href="#services" onClick={() => setIsOpen(!isOpen)}>
+              Services
+            </a>
           </li>
           <li>
-            <a href="index.html#about">About</a>
+            <a href="#about" onClick={() => setIsOpen(!isOpen)}>
+              About
+            </a>
           </li>
           <li>
-            <a href="index.html#work">Work</a>
+            <a href="#work" onClick={() => setIsOpen(!isOpen)}>
+              Work
+            </a>
           </li>
           <li>
-            <a href="index.html#contact">Contact</a>
+            <a href="index.html#contact" onClick={() => setIsOpen(!isOpen)}>
+              Contact
+            </a>
           </li>
         </ul>
       </aside>

@@ -1,9 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Sidebar from "./Sidebar";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(true);
+
   return (
     <Wrapper>
       <div className="navbar">
@@ -11,7 +15,7 @@ const Navbar = () => {
           <div class="logo">
             <img src={logo} alt="Zainab logo" />
           </div>
-          <button class="sidebar-toggle">
+          <button class="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
             <FaBars />
           </button>
         </div>
@@ -41,6 +45,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
+      {isOpen && <Sidebar />}
     </Wrapper>
   );
 };
