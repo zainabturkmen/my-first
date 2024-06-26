@@ -9,7 +9,7 @@
 /* Custom Properties, update these for your own design */
 
 :root {
- --ff-primary: "Lora", serif;
+  --ff-primary: "Lora", serif;
   --ff-secondary: "Roboto Slab", serif;
 
   --fw-reg: 300;
@@ -47,10 +47,10 @@ body {
   line-height: 1.6;
 }
 
-img {
+/* img {
   display: block;
-  max-width: 100%;
-}
+  min-width: 60%;
+} */
 
 /* Typography */
 
