@@ -64,8 +64,11 @@ const Wrapper = styled.header`
     display: none;
   }
 
+  nav{
+    
+  }
 
-  
+
 `;
 
 export default Navbar;
