@@ -26,16 +26,16 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="index.html#services">services</a>
+            <a href="index.html#services">Services</a>
           </li>
           <li>
-            <a href="index.html#about">about</a>
+            <a href="index.html#about">About</a>
           </li>
           <li>
-            <a href="index.html#work">work</a>
+            <a href="index.html#work">Work</a>
           </li>
           <li>
-            <a href="index.html#contact">contact</a>
+            <a href="index.html#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -49,7 +49,6 @@ const Wrapper = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 2em;
   }
 
   img {
@@ -64,11 +63,18 @@ const Wrapper = styled.header`
     display: none;
   }
 
-  nav{
-    
+  ul {
+    display: flex;
+    gap: 2em;
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      text-transform: capitalize;
+    }
   }
-
-
 `;
 
 export default Navbar;
