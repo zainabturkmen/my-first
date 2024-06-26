@@ -73,14 +73,13 @@ const SidebarContainer = styled.div`
     display: block;
     text-align: left;
     font-size: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 1rem 1.5rem;
     transition: all 0.3s linear;
     letter-spacing: 2px;
     text-decoration: none;
     color: #000;
-
-    font-weight: 400;
+    font-weight: bolder;
   }
 
   .links a:hover {
