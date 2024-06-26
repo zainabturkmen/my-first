@@ -15,7 +15,7 @@ const Navbar = () => {
           <div class="logo">
             <img src={logo} alt="Zainab logo" />
           </div>
-          <button class="sidebar-toggle" onClick={() => setIsOpen(!isOpen)}>
+          <button class="sidebar-toggle" onClick={() => setIsOpen(<Sidebar/>)}>
             <FaBars />
           </button>
         </div>
