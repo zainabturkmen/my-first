@@ -65,6 +65,10 @@ const SidebarContainer = styled.div`
   }
   .links {
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
     li {
       list-style-type: none;
     }
@@ -74,7 +78,6 @@ const SidebarContainer = styled.div`
     text-align: left;
     font-size: 1rem;
     text-transform: uppercase;
-    /* padding: 1rem 1.5rem; */
     transition: all 0.3s linear;
     letter-spacing: 2px;
     text-decoration: none;
@@ -83,9 +86,7 @@ const SidebarContainer = styled.div`
   }
 
   .links a:hover {
-    padding: 1rem 1.5rem;
-    padding-left: 2rem;
-    background: var(--clr-grey-10);
+    padding-left: 1rem;
     color: var(--clr-accent);
   }
 
