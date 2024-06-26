@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png"
 import styled from "styled-components";
 
@@ -13,6 +14,9 @@ const Sidebar = () => {
       >
         <div className="sidebar-header">
             <img src={logo} alt="zainab logo"/>
+            <button type="button" className="close-btn">
+                <FaTimes/>
+            </button>
         </div>
       </aside>
 
