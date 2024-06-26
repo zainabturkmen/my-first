@@ -56,11 +56,16 @@ const Wrapper = styled.header`
     width: 15%;
   }
 
-  .sidebar-toggle {
+  .sidebar-toggle,
+  .close-btn {
     background-color: white;
     border: none;
     font-size: 1.25rem;
+    display: none;
   }
+
+
+  
 `;
 
 export default Navbar;
