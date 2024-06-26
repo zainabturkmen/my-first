@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const Wrapper = styled.header`
   .navbar {
-    padding: .4em 5em;
+    padding: 0.4em 5em;
     box-shadow: var(--bs);
   }
 
@@ -73,9 +73,20 @@ const Wrapper = styled.header`
     cursor: pointer;
   }
 
-  /* 
- 
+  @media (min-width: 992px) {
+    .sidebar-toggle,
+    .close-btn {
+      background-color: white;
+      border: none;
+      font-size: 1.25rem;
+      display: block;
+    }
 
+  
+   
+  } 
+
+  /* 
   ul {
     display: flex;
     gap: 2em;
@@ -90,19 +101,6 @@ const Wrapper = styled.header`
       letter-spacing: 2px;
       font-size: 0.9em;
     }
-  } */
-
-  /* @media (max-width: 680px) {
-    .sidebar-toggle,
-    .close-btn {
-      background-color: white;
-      border: none;
-      font-size: 1.25rem;
-      display: block;
-    }
-
-  
-   
   } */
 `;
 
