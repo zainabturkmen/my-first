@@ -83,7 +83,7 @@ const Wrapper = styled.header`
     .sidebar-toggle,
     .close-btn {
       background-color: white;
-      border: none;
+      border: none;            
       font-size: 1.25rem;
       display: block;
     }
