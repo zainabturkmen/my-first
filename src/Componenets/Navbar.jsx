@@ -55,6 +55,12 @@ const Wrapper = styled.header`
   img {
     width: 15%;
   }
+
+  .sidebar-toggle {
+    background-color: white;
+    border: none;
+    font-size: 1.25rem;
+  }
 `;
 
 export default Navbar;
