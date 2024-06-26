@@ -82,8 +82,6 @@ const Wrapper = styled.header`
       display: block;
     }
 
-  
-   
   } 
 
   /* 
