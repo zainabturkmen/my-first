@@ -79,7 +79,7 @@ const Wrapper = styled.header`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 680px) {
     .sidebar-toggle,
     .close-btn {
       background-color: white;
