@@ -45,14 +45,15 @@ const SidebarContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.6rem;
+    padding: 1rem 1.5rem;
   }
   .close-btn {
     font-size: 1.5rem;
     background: transparent;
     border-color: transparent;
     color: #000;
-    transition: var(--transition);
+    /* transition: var(--transition); */
+    transition: all 0.3s linear;
     cursor: pointer;
     margin-top: 0.2rem;
   }
