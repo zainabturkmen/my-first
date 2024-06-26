@@ -74,32 +74,36 @@ const Wrapper = styled.header`
   }
 
   @media (min-width: 992px) {
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
     .sidebar-toggle,
     .close-btn {
-      background-color: white;
-      border: none;
-      font-size: 1.25rem;
+      display: none;
+    }
+
+    nav {
       display: block;
     }
 
-  } 
-
-  /* 
-  ul {
-    display: flex;
-    gap: 2em;
-    li {
-      list-style-type: none;
+    ul {
+      display: flex;
+      gap: 2em;
+      li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 0.9em;
+      }
     }
-    a {
-      text-decoration: none;
-      color: #000;
-      text-transform: uppercase;
-      font-weight: 600;
-      letter-spacing: 2px;
-      font-size: 0.9em;
-    }
-  } */
+  }
 `;
 
 export default Navbar;
