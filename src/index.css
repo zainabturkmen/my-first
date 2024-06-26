@@ -67,6 +67,6 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-.icon {
-  background-color: black;
+.navbar{
+    background-color: beige;
 }

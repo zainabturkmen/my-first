@@ -1,22 +1,23 @@
 import React from "react";
-import logo from "../assets/react.svg";
+import logo from "../assets/logo.png";
 import styled from "styled-components";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <Wrapper>
+    <Wrapper className="navbar">
       <div class="logo-and-toggle-div">
         <div class="logo">
-          <img src="img/image.png" alt="" />
+          <img src={logo} alt="Zainab logo" />
         </div>
         <button class="sidebar-toggle">
-          <i class="fas fa-bars"></i>
+          <FaBars />
         </button>
       </div>
       {/* <!-- links --> */}
       <nav class="nav">
         <button class="close-btn">
-          <i class="fas fa-times"></i>
+          <FaTimes />
         </button>
         <ul class="links">
           <li>
@@ -47,6 +48,12 @@ const Wrapper = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 2em;
+  }
+
+  img {
+    width: 15%;
   }
 `;
 
