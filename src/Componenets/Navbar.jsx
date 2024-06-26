@@ -66,15 +66,16 @@ const Wrapper = styled.header`
   ul {
     display: flex;
     gap: 2em;
-    li {
+    li{
       list-style-type: none;
     }
     a {
       text-decoration: none;
       color: #000;
-      text-transform: capitalize;
+      text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 2px;
+      font-size: .9em;
     }
   }
 `;

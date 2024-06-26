@@ -4,11 +4,13 @@
   box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap");
+
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monospace;
+ --ff-primary: "Lora", serif;
+  --ff-secondary: "Roboto Slab", serif;
 
   --fw-reg: 300;
   --fw-bold: 900;
@@ -72,7 +74,7 @@ h3 {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 2em;
+  padding: 0 5em;
   align-items: center;
   box-shadow: var(--bs);
 }
