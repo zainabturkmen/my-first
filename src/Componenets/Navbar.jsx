@@ -73,6 +73,8 @@ const Wrapper = styled.header`
       text-decoration: none;
       color: #000;
       text-transform: capitalize;
+      font-weight: 600;
+      letter-spacing: 2px;
     }
   }
 `;

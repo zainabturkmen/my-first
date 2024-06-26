@@ -71,7 +71,8 @@ h3 {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 2em;
   align-items: center;
   box-shadow: var(--bs);
 }
