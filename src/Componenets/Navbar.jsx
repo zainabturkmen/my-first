@@ -45,6 +45,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
+      {isOpen && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
     </Wrapper>
   );
 };
