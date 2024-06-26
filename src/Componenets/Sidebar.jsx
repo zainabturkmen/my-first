@@ -74,7 +74,7 @@ const SidebarContainer = styled.div`
     text-align: left;
     font-size: 1rem;
     text-transform: uppercase;
-    padding: 1rem 1.5rem;
+    /* padding: 1rem 1.5rem; */
     transition: all 0.3s linear;
     letter-spacing: 2px;
     text-decoration: none;
@@ -93,7 +93,7 @@ const SidebarContainer = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 40%;
     height: 100%;
     background: white;
     transition: var(--transition);
