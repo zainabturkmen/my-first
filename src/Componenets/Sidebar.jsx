@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 import styled from "styled-components";
 
 const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <SidebarContainer>
@@ -52,7 +52,6 @@ const SidebarContainer = styled.div`
     background: transparent;
     border-color: transparent;
     color: #000;
-    /* transition: var(--transition); */
     transition: all 0.3s linear;
     cursor: pointer;
     margin-top: 0.2rem;
@@ -98,9 +97,8 @@ const SidebarContainer = styled.div`
     width: 40%;
     height: 100%;
     background: white;
-    transition: var(--transition);
+    transition: all 0.3s linear;
     transform: translate(-100%);
-    z-index: -1;
     box-shadow: var(--bs);
   }
   .show-sidebar {
