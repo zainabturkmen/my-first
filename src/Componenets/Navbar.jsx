@@ -45,7 +45,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      {isOpen && <Sidebar />}
     </Wrapper>
   );
 };
