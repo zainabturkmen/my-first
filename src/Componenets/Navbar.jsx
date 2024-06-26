@@ -66,7 +66,7 @@ const Wrapper = styled.header`
   ul {
     display: flex;
     gap: 2em;
-    li{
+    li {
       list-style-type: none;
     }
     a {
@@ -75,12 +75,18 @@ const Wrapper = styled.header`
       text-transform: uppercase;
       font-weight: 600;
       letter-spacing: 2px;
-      font-size: .9em;
+      font-size: 0.9em;
     }
   }
 
-  @media screen(min-width: 600px) {
-    
+  @media (min-width: 600px) {
+    .sidebar-toggle,
+    .close-btn {
+      background-color: white;
+      border: none;
+      font-size: 1.25rem;
+      display: none;
+    }
   }
 `;
 
