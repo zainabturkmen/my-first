@@ -78,6 +78,10 @@ const Wrapper = styled.header`
       font-size: .9em;
     }
   }
+
+  @media screen(min-width: 600px) {
+    
+  }
 `;
 
 export default Navbar;
