@@ -79,13 +79,13 @@ const Wrapper = styled.header`
     }
   }
 
-  @media (min-width: 600px) {
+  @media (max-width: 800px) {
     .sidebar-toggle,
     .close-btn {
       background-color: white;
       border: none;
       font-size: 1.25rem;
-      display: none;
+      display: block;
     }
   }
 `;
