@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const Wrapper = styled.header`
   .navbar {
-    padding: .3em 2em;
+    padding: 0.3em 2em;
     box-shadow: var(--bs);
   }
 
@@ -71,6 +71,10 @@ const Wrapper = styled.header`
     border: none;
     font-size: 1.3rem;
     cursor: pointer;
+  }
+
+  .sidebar-toggle:hover {
+    color: var(--clr-accent);
   }
 
   @media (min-width: 700px) {
@@ -102,6 +106,10 @@ const Wrapper = styled.header`
         font-weight: 600;
         letter-spacing: 2px;
         font-size: 0.9em;
+      }
+
+      a:hover {
+        color: var(--clr-accent);
       }
     }
   }
