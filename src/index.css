@@ -39,7 +39,7 @@
 /* General styles */
 
 body {
-  background: var(--clr-light);
+  background: var(--clr-ligh);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
