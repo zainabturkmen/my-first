@@ -9,7 +9,7 @@ const Sidebar = () => {
 
   return (
     <SidebarContainer>
-      <aside className={`${isOpen ? "sidebar show-sidebar" : "show-sidebar"}`}>
+      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
         <div className="sidebar-header">
           <img src={logo} className="logo" alt="zainab logo" />
           <button type="button" className="close-btn">
@@ -107,10 +107,8 @@ const SidebarContainer = styled.div`
     transform: translate(0);
     z-index: 999;
   }
-  .cart-btn-wrapper {
-    margin: 2rem auto;
-  }
-  @media screen and (min-width: 992px) {
+
+  @media screen and (min-width: 700px) {
     .sidebar {
       display: none;
     }
