@@ -2,14 +2,15 @@ import React from "react";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <Wrapper className="navbar">
       <div class="logo-and-toggle-div">
-        <div class="logo">
+        <Link to="/" class="logo">
           <img src={logo} alt="Zainab logo" />
-        </div>
+        </Link>
         <button class="sidebar-toggle">
           <FaBars />
         </button>
