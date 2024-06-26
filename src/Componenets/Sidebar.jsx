@@ -16,13 +16,31 @@ const Sidebar = () => {
             <FaTimes />
           </button>
         </div>
+        <ul className="links">
+          <li>
+            <a href="index.html" class="active">
+              home
+            </a>
+          </li>
+          <li>
+            <a href="index.html#services">Services</a>
+          </li>
+          <li>
+            <a href="index.html#about">About</a>
+          </li>
+          <li>
+            <a href="index.html#work">Work</a>
+          </li>
+          <li>
+            <a href="index.html#contact">Contact</a>
+          </li>
+        </ul>
       </aside>
     </SidebarContainer>
   );
 };
 
 const SidebarContainer = styled.div`
-  text-align: center;
   .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -30,17 +48,16 @@ const SidebarContainer = styled.div`
     padding: 1rem 1.5rem;
   }
   .close-btn {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    color: #000;
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-accent);
   }
   .logo {
     justify-self: center;
@@ -48,6 +65,9 @@ const SidebarContainer = styled.div`
   }
   .links {
     margin-bottom: 2rem;
+    li {
+      list-style-type: none;
+    }
   }
   .links a {
     display: block;
@@ -57,14 +77,15 @@ const SidebarContainer = styled.div`
     padding: 1rem 1.5rem;
     color: var(--clr-grey-3);
     transition: var(--transition);
-    letter-spacing: var(--spacing);
+    letter-spacing: 2px;
+    text-decoration: none;
   }
 
   .links a:hover {
     padding: 1rem 1.5rem;
     padding-left: 2rem;
     background: var(--clr-grey-10);
-    color: var(--clr-grey-2);
+    color: var(--clr-accent);
   }
 
   .sidebar {
