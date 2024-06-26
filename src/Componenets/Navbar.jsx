@@ -81,7 +81,6 @@ const Wrapper = styled.header`
 
   @media screen(min-width: 600px) {
     
-    
   }
 `;
 
