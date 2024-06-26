@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 const Sidebar = () => {
     const [isOpen, setIsOpen] = useState(true);
+    
   return (
     <div>
       
