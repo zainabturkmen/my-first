@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const Wrapper = styled.header`
   .navbar {
-    padding: 0em 5em;
+    padding: .3em 2em;
     box-shadow: var(--bs);
   }
 
@@ -73,8 +73,9 @@ const Wrapper = styled.header`
     cursor: pointer;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 700px) {
     .navbar {
+      padding: 0 5em;
       display: flex;
       align-items: center;
       justify-content: space-between;
