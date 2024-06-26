@@ -10,7 +10,7 @@ const Sidebar = () => {
   return (
     <SidebarContainer>
       <aside
-        // className={`${isOpen ? "sidebar show-sidebar" : "show-sidebar"}`}
+        className={`${isOpen ? "sidebar show-sidebar" : "show-sidebar"}`}
       >
         <div className="sidebar-header">
             <img src={logo} alt="zainab logo"/>
