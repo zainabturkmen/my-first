@@ -52,7 +52,7 @@ const Wrapper = styled.header`
   }
 
   img {
-    width: 15%;
+    width: 5em;
   }
 
   .sidebar-toggle,
