@@ -5,63 +5,76 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <Wrapper className="navbar">
-      <div class="logo-and-toggle-div">
-        <div class="logo">
-          <img src={logo} alt="Zainab logo" />
+    <Wrapper>
+      <div className="navbar">
+        <div class="logo-and-toggle-div">
+          <div class="logo">
+            <img src={logo} alt="Zainab logo" />
+          </div>
+          <button class="sidebar-toggle">
+            <FaBars />
+          </button>
         </div>
-        <button class="sidebar-toggle">
-          <FaBars />
-        </button>
+        {/* <!-- links --> */}
+        <nav class="nav">
+          <button class="close-btn">
+            <FaTimes />
+          </button>
+          <ul class="links">
+            <li>
+              <a href="index.html" class="active">
+                home
+              </a>
+            </li>
+            <li>
+              <a href="index.html#services">Services</a>
+            </li>
+            <li>
+              <a href="index.html#about">About</a>
+            </li>
+            <li>
+              <a href="index.html#work">Work</a>
+            </li>
+            <li>
+              <a href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      {/* <!-- links --> */}
-      <nav class="nav">
-        <button class="close-btn">
-          <FaTimes />
-        </button>
-        <ul class="links">
-          <li>
-            <a href="index.html" class="active">
-              home
-            </a>
-          </li>
-          <li>
-            <a href="index.html#services">Services</a>
-          </li>
-          <li>
-            <a href="index.html#about">About</a>
-          </li>
-          <li>
-            <a href="index.html#work">Work</a>
-          </li>
-          <li>
-            <a href="index.html#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.header`
-  .logo-and-toggle-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  .navbar {
+    padding: .4em 5em;
+    box-shadow: var(--bs);
   }
 
   img {
     width: 5em;
   }
 
+  nav {
+    display: none;
+  }
+
+  .logo-and-toggle-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .sidebar-toggle,
   .close-btn {
     background-color: white;
     border: none;
-    font-size: 1.25rem;
-    display: none;
+    font-size: 1.3rem;
+    cursor: pointer;
   }
+
+  /* 
+ 
 
   ul {
     display: flex;
@@ -77,17 +90,20 @@ const Wrapper = styled.header`
       letter-spacing: 2px;
       font-size: 0.9em;
     }
-  }
+  } */
 
-  @media (max-width: 680px) {
+  /* @media (max-width: 680px) {
     .sidebar-toggle,
     .close-btn {
       background-color: white;
-      border: none;            
+      border: none;
       font-size: 1.25rem;
       display: block;
     }
-  }
+
+  
+   
+  } */
 `;
 
 export default Navbar;

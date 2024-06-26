@@ -71,10 +71,10 @@ h3 {
   font-size: var(--fs-h3);
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5em;
-  align-items: center;
-  box-shadow: var(--bs);
-}
+
+
+/* @media (max-width: 680px) {
+    .navbar{
+        display: flex;
+    }
+} */
