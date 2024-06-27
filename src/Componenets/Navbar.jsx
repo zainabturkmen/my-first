@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="logo">
             <img src={logo} alt="Zainab logo" />
           </div>
-          <button className="sidebar-toggle" onClick={toggleSidebar}>
+          <button className="sidebar-toggle" >
             <FaBars />
           </button>
         </div>
@@ -29,16 +29,16 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="index.html#services">Services</a>
+              <a href="#services">Services</a>
             </li>
             <li>
-              <a href="index.html#about">About</a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="index.html#work">Work</a>
+              <a href="#work">Work</a>
             </li>
             <li>
-              <a href="index.html#contact">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
