@@ -8,23 +8,27 @@ import Sidebar from "./Sidebar";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <Wrapper>
       <div className="navbar">
-        <div class="logo-and-toggle-div">
-          <div class="logo">
+        <div className="logo-and-toggle-div">
+          <div className="logo">
             <img src={logo} alt="Zainab logo" />
           </div>
-          <button class="sidebar-toggle" onClick={() => setIsOpen(<Sidebar/>)}>
+          <button className="sidebar-toggle" onClick={toggleSidebar}>
             <FaBars />
           </button>
         </div>
         {/* <!-- links --> */}
-        <nav class="nav">
-          <button class="close-btn">
+        <nav className= 'nav'>
+          <button className="close-btn">
             <FaTimes />
           </button>
-          <ul class="links">
+          <ul className="links">
             <li>
               <a href="index.html" class="active">
                 home
@@ -45,7 +49,6 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      {isOpen && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
     </Wrapper>
   );
 };
