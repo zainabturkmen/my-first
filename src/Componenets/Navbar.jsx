@@ -6,12 +6,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <Wrapper>
       <div className="navbar">
@@ -24,7 +18,7 @@ const Navbar = () => {
           </button>
         </div>
         {/* <!-- links --> */}
-        <nav className= 'nav'>
+        <nav className="nav">
           <button className="close-btn">
             <FaTimes />
           </button>
