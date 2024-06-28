@@ -57,7 +57,6 @@ const Wrapper = styled.header`
   .navbar {
     padding: 0.3em 2em;
     box-shadow: var(--bs);
-    transition: all 3ms linear;
   }
 
   img {
