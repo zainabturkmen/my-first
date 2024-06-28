@@ -110,13 +110,12 @@ const SidebarContainer = styled.div`
     height: 100%;
     background: white;
     transition: all 0.3s linear;
-    transform: translate(-100%);
     box-shadow: var(--bs);
   }
   .show-sidebar {
     transform: translate(0);
     z-index: 999;
-    transition: all 3ms linear;
+    /* transition: all 0.3s linear; */
   }
 
   @media screen and (min-width: 700px) {
@@ -127,3 +126,24 @@ const SidebarContainer = styled.div`
 `;
 
 export default Sidebar;
+
+/* @keyframes all67 {
+    20% {
+      transform: translateX(-30%);
+    }
+    40% {
+
+      transform: translateX(40%);
+    }
+    60% {
+
+      transform: translateX(-30%);
+    }
+    80% {
+      transform: translateX(40%);
+    }
+    100% {
+
+      transform: translateX(-50%);
+    }
+  } */

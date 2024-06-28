@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    setIsSidebarOpen((open) => !open);
   };
 
   return (
@@ -20,15 +20,14 @@ const Navbar = () => {
             <img src={logo} alt="Zainab logo" />
           </div>
           <button className="sidebar-toggle" onClick={toggleSidebar}>
-            {/* <FaBars /> */}
-            {isSidebarOpen ? <FaBars /> : <FaBars />}
+            <FaBars />
           </button>
         </div>
         {/* <!-- links --> */}
-        <nav className={`nav ${isSidebarOpen ? "show-nav" : ""}`}>
-          <button className="close-btn" onClick={toggleSidebar}>
+        <nav>
+          {/* <button className="close-btn" onClick={toggleSidebar}>
             <FaTimes />
-          </button>
+          </button> */}
           <ul className="links">
             <li>
               <a href="#home">home</a>
@@ -65,7 +64,6 @@ const Wrapper = styled.header`
 
   nav {
     display: none;
-    /* transition: all 0.3s ease-in-out; */
   }
 
   .logo-and-toggle-div {
@@ -99,10 +97,6 @@ const Wrapper = styled.header`
     }
 
     nav {
-      display: block;
-    }
-
-    .show-nav {
       display: block;
     }
 
