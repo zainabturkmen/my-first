@@ -8,17 +8,12 @@ import Sidebar from "./Sidebar";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // const toggleSidebar = () => {
-  //   setIsSidebarOpen(!isSidebarOpen);
-  // };
-
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-    setTimeout(() => {
-      setIsSidebarOpen(!isSidebarOpen);
-    }, 300); // Delay of 300ms (adjust as needed)
   };
-  
+
+
+
   return (
     <Wrapper>
       <div className="navbar">
@@ -72,7 +67,7 @@ const Wrapper = styled.header`
 
   nav {
     display: none;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
   }
 
   .logo-and-toggle-div {
