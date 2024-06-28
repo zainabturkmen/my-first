@@ -64,7 +64,7 @@ const SidebarContainer = styled.div`
     background: transparent;
     border-color: transparent;
     color: #000;
-    transition: all 0.3s linear;
+    /* transition: all 0.3s linear; */
     cursor: pointer;
     margin-top: 0.2rem;
   }
@@ -109,13 +109,14 @@ const SidebarContainer = styled.div`
     width: 40%;
     height: 100%;
     background: white;
+    transform: translate(-100%);
     transition: all 0.3s linear;
     box-shadow: var(--bs);
   }
   .show-sidebar {
-    transform: translate(0);
+    transform: translate(00%);
     z-index: 999;
-    /* transition: all 0.3s linear; */
+    transition: all 0.3s linear;
   }
 
   @media screen and (min-width: 700px) {
