@@ -12,8 +12,6 @@ const Navbar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
 
-
-
   return (
     <Wrapper>
       <div className="navbar">
@@ -27,7 +25,7 @@ const Navbar = () => {
           </button>
         </div>
         {/* <!-- links --> */}
-        <nav className="nav">
+        <nav className={`nav ${isSidebarOpen ? "show-nav" : ""}`}>
           <button className="close-btn" onClick={toggleSidebar}>
             <FaTimes />
           </button>
@@ -101,6 +99,10 @@ const Wrapper = styled.header`
     }
 
     nav {
+      display: block;
+    }
+
+    .show-nav {
       display: block;
     }
 
