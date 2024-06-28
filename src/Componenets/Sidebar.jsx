@@ -116,6 +116,7 @@ const SidebarContainer = styled.div`
   .show-sidebar {
     transform: translate(0);
     z-index: 999;
+    transition: all 3ms linear;
   }
 
   @media screen and (min-width: 700px) {

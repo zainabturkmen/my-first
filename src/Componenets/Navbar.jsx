@@ -65,6 +65,7 @@ const Wrapper = styled.header`
 
   nav {
     display: none;
+    /* transition: all 0.3s ease-in-out; */
   }
 
   .logo-and-toggle-div {
