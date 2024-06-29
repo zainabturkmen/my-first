@@ -1,30 +1,18 @@
 import React from "react";
-import { useState, useEffect } from "react";
+// import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import logo from "../assets/logo.png";
 import styled from "styled-components";
-import links from "../Componenets/links";
+// import links from "../Componenets/links";
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <SidebarContainer>
       <aside className={`sidebar ${isSidebarOpen && "show-sidebar"}`}>
-        {/* <div className="sidebar-header"> */}
-        {/* <img src={logo} className="logo" alt="zainab logo" /> */}
         <button type="button" className="close-btn" onClick={toggleSidebar}>
-          <FaTimes className="x" />
+          <FaTimes />
         </button>
-        {/* </div> */}
         <ul className="links">
-          {links.map(({ id, text, url }) => {
-            return (
-              <li key={id}>
-                <a href={url}>{text}</a>
-              </li>
-            );
-          })}
-
-          {/* <li>
+          <li>
             <a href="#home">home</a>
           </li>
           <li>
@@ -38,7 +26,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           </li>
           <li>
             <a href="#contact">Contact</a>
-          </li> */}
+          </li>
         </ul>
       </aside>
     </SidebarContainer>
@@ -46,13 +34,6 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
 };
 
 const SidebarContainer = styled.div`
-  /* .sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-  } */
-
   .sidebar {
     position: fixed;
     top: 0;
@@ -63,10 +44,7 @@ const SidebarContainer = styled.div`
     background: white;
     transform: translate(-100%);
     transition: transform 1s linear;
-
     box-shadow: var(--bs);
-    /* overflow-x: hidden; */
-    /* transition: 0.5s; */
   }
 
   .show-sidebar {
