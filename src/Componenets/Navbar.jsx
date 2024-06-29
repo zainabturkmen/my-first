@@ -20,8 +20,7 @@ const Navbar = () => {
             <img src={logo} alt="Zainab logo" />
           </div>
           <button className="sidebar-toggle" onClick={toggleSidebar}>
-            {/* <FaBars /> */}
-            {isSidebarOpen ? <FaBars /> : <FaBars />}
+            <FaBars />
           </button>
         </div>
         {/* <!-- links --> */}

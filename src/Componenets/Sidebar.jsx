@@ -1,14 +1,26 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
+  useEffect(() => {
+    const sidebar = document.querySelector(".sidebar");
+    if (isSidebarOpen) {
+      sidebar.classList.add("show-sidebar");
+      sidebar.style.transform = "translateX(0)";
+    } else {
+      sidebar.classList.remove("show-sidebar");
+      sidebar.style.transform = "translateX(-100%)";
+    }
+  }, [isSidebarOpen]);
+
   return (
     <SidebarContainer>
       <aside
-        className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
+        className="sidebar"
+        // className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
         <div className="sidebar-header">
           <img src={logo} className="logo" alt="zainab logo" />
@@ -95,14 +107,13 @@ const SidebarContainer = styled.div`
     width: 40%;
     height: 100%;
     background: white;
-    transform: translate(-100%);
     transition: all 0.3s linear;
+    transform: translate(-100%);
     box-shadow: var(--bs);
   }
   .show-sidebar {
     transform: translate(0%);
     z-index: 999;
-    transition: all 0.3s linear;
   }
 
   @media screen and (min-width: 700px) {
@@ -113,24 +124,3 @@ const SidebarContainer = styled.div`
 `;
 
 export default Sidebar;
-
-/* @keyframes all67 {
-    20% {
-      transform: translateX(-30%);
-    }
-    40% {
-
-      transform: translateX(40%);
-    }
-    60% {
-
-      transform: translateX(-30%);
-    }
-    80% {
-      transform: translateX(40%);
-    }
-    100% {
-
-      transform: translateX(-50%);
-    }
-  } */
