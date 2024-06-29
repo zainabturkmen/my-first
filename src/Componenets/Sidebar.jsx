@@ -45,6 +45,24 @@ const SidebarContainer = styled.div`
     align-items: center;
     padding: 1rem 1.5rem;
   } */
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    background: white;
+    transition: all 0.3s linear !important;
+    transform: translate(100%);
+    box-shadow: var(--bs);
+  }
+
+  .show-sidebar {
+    transform: translate(0%);
+    z-index: 999;
+  }
+
   .close-btn {
     font-size: 1.5rem;
     background: transparent;
@@ -52,8 +70,7 @@ const SidebarContainer = styled.div`
     color: #000;
     transition: all 0.3s linear;
     cursor: pointer;
-    padding: .5em 1.5em ;
-
+    padding: 0.5em 1.5em;
   }
   .close-btn:hover {
     color: var(--clr-accent);
@@ -87,22 +104,6 @@ const SidebarContainer = styled.div`
   .links a:hover {
     padding-left: 1rem;
     color: var(--clr-accent);
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background: white;
-    transition: all 0.3s linear;
-    transform: translate(100%);
-    box-shadow: var(--bs);
-  }
-  .show-sidebar {
-    transform: translate(0%);
-    z-index: 999;
   }
 
   @media screen and (min-width: 700px) {
