@@ -7,13 +7,11 @@ import styled from "styled-components";
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <SidebarContainer>
-      <aside
-        className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
-      >
+      <aside className={`sidebar ${isSidebarOpen && "show-sidebar"}`}>
         {/* <div className="sidebar-header"> */}
         {/* <img src={logo} className="logo" alt="zainab logo" /> */}
         <button type="button" className="close-btn" onClick={toggleSidebar}>
-          <FaTimes />
+          <FaTimes className="x" />
         </button>
         {/* </div> */}
         <ul className="links">
@@ -72,6 +70,7 @@ const SidebarContainer = styled.div`
     cursor: pointer;
     padding: 0.5em 1.5em;
   }
+
   .close-btn:hover {
     color: var(--clr-accent);
   }
