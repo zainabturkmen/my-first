@@ -1,8 +1,6 @@
 import React from "react";
-// import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
-// import links from "../Componenets/links";
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
@@ -107,27 +105,4 @@ const SidebarContainer = styled.div`
 
 export default Sidebar;
 
-// animation: anima 1s alternate linear forwards 1;
 
-/* @keyframes anima {
-    20% {
-      transition: linear 1ms;
-      transform: translateX(100%);
-    }
-    40% {
-      transition: linear ease 1ms;
-      transform: translateX(-90%);
-    }
-    60% {
-      transition: linear ease 1ms;
-      transform: translateX(60%);
-    }
-    80% {
-      transition: linear ease 1ms;
-      transform: translateX(20%);
-    }
-    100% {
-      transition: linear ease 1ms;
-      transform: translateX(0%);
-    }
-  }*/
