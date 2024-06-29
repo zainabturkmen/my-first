@@ -16,7 +16,12 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
         </button>
         {/* </div> */}
         <ul className="links">
-          <li>
+
+          {links.map(() => {
+            
+          })}
+
+          {/* <li>
             <a href="#home">home</a>
           </li>
           <li>
@@ -30,7 +35,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
           </li>
           <li>
             <a href="#contact">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </aside>
     </SidebarContainer>
