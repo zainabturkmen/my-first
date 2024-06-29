@@ -4,47 +4,33 @@ import { FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
+const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <SidebarContainer>
-      <aside className={`${isOpen ? "sidebar show-sidebar" : "sidebar"}`}>
+      <aside
+        className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
+      >
         <div className="sidebar-header">
           <img src={logo} className="logo" alt="zainab logo" />
-          <button
-            type="button"
-            className="close-btn"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button type="button" className="close-btn" onClick={toggleSidebar}>
             <FaTimes />
           </button>
         </div>
         <ul className="links">
           <li>
-            <a href="#home" onClick={() => setIsOpen(!isOpen)}>
-              home
-            </a>
+            <a href="#home">home</a>
           </li>
           <li>
-            <a href="#services" onClick={() => setIsOpen(!isOpen)}>
-              Services
-            </a>
+            <a href="#services">Services</a>
           </li>
           <li>
-            <a href="#about" onClick={() => setIsOpen(!isOpen)}>
-              About
-            </a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#work" onClick={() => setIsOpen(!isOpen)}>
-              Work
-            </a>
+            <a href="#work">Work</a>
           </li>
           <li>
-            <a href="index.html#contact" onClick={() => setIsOpen(!isOpen)}>
-              Contact
-            </a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </aside>
@@ -64,7 +50,7 @@ const SidebarContainer = styled.div`
     background: transparent;
     border-color: transparent;
     color: #000;
-    /* transition: all 0.3s linear; */
+    transition: all 0.3s linear;
     cursor: pointer;
     margin-top: 0.2rem;
   }
@@ -114,7 +100,7 @@ const SidebarContainer = styled.div`
     box-shadow: var(--bs);
   }
   .show-sidebar {
-    transform: translate(00%);
+    transform: translate(0%);
     z-index: 999;
     transition: all 0.3s linear;
   }

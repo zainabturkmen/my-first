@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 
 const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -20,7 +20,8 @@ const Navbar = () => {
             <img src={logo} alt="Zainab logo" />
           </div>
           <button className="sidebar-toggle" onClick={toggleSidebar}>
-            <FaBars />
+            {/* <FaBars /> */}
+            {isSidebarOpen ? <FaBars /> : <FaBars />}
           </button>
         </div>
         {/* <!-- links --> */}
@@ -47,7 +48,9 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      {isSidebarOpen && <Sidebar />}
+      {isSidebarOpen && (
+        <Sidebar isSidebarOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      )}
     </Wrapper>
   );
 };
