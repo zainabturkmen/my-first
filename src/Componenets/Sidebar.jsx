@@ -50,14 +50,20 @@ const SidebarContainer = styled.div`
     right: 0;
     width: 40%;
     height: 100%;
+    z-index: 1;
     background: white;
-    transition: all 0.3s linear !important;
-    transform: translate(100%);
+    transform: translate(-100%);
+    transition: transform 1s linear;
+
     box-shadow: var(--bs);
+    /* overflow-x: hidden; */
+    /* transition: 0.5s; */
   }
 
   .show-sidebar {
     transform: translate(0%);
+    transition: transform 1s linear;
+
     z-index: 999;
   }
 
@@ -113,3 +119,28 @@ const SidebarContainer = styled.div`
 `;
 
 export default Sidebar;
+
+// animation: anima 1s alternate linear forwards 1;
+
+/* @keyframes anima {
+    20% {
+      transition: linear 1ms;
+      transform: translateX(100%);
+    }
+    40% {
+      transition: linear ease 1ms;
+      transform: translateX(-90%);
+    }
+    60% {
+      transition: linear ease 1ms;
+      transform: translateX(60%);
+    }
+    80% {
+      transition: linear ease 1ms;
+      transform: translateX(20%);
+    }
+    100% {
+      transition: linear ease 1ms;
+      transform: translateX(0%);
+    }
+  }*/
