@@ -103,7 +103,7 @@ const SidebarContainer = styled.div`
   .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 40%;
     height: 100%;
     background: white;
@@ -113,7 +113,7 @@ const SidebarContainer = styled.div`
   }
   .show-sidebar {
     transform: translate(0%);
-    z-index: 999;
+    /* z-index: 999; */
   }
 
   @media screen and (min-width: 700px) {
