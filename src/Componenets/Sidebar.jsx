@@ -5,18 +5,17 @@ import logo from "../assets/logo.png";
 import styled from "styled-components";
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
-
   return (
     <SidebarContainer>
       <aside
         className={`${isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}`}
       >
-        <div className="sidebar-header">
-          <img src={logo} className="logo" alt="zainab logo" />
-          <button type="button" className="close-btn" onClick={toggleSidebar}>
-            <FaTimes />
-          </button>
-        </div>
+        {/* <div className="sidebar-header"> */}
+        {/* <img src={logo} className="logo" alt="zainab logo" /> */}
+        <button type="button" className="close-btn" onClick={toggleSidebar}>
+          <FaTimes />
+        </button>
+        {/* </div> */}
         <ul className="links">
           <li>
             <a href="#home">home</a>
@@ -40,12 +39,12 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
 };
 
 const SidebarContainer = styled.div`
-  .sidebar-header {
+  /* .sidebar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-  }
+  } */
   .close-btn {
     font-size: 1.5rem;
     background: transparent;
@@ -53,7 +52,8 @@ const SidebarContainer = styled.div`
     color: #000;
     transition: all 0.3s linear;
     cursor: pointer;
-    margin-top: 0.2rem;
+    padding: .5em 1.5em ;
+
   }
   .close-btn:hover {
     color: var(--clr-accent);
@@ -102,7 +102,7 @@ const SidebarContainer = styled.div`
   }
   .show-sidebar {
     transform: translate(0%);
-    /* z-index: 999; */
+    z-index: 999;
   }
 
   @media screen and (min-width: 700px) {
