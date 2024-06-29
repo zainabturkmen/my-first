@@ -16,9 +16,12 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
         </button>
         {/* </div> */}
         <ul className="links">
-
-          {links.map(() => {
-            
+          {links.map(({ id, text, url }) => {
+            return (
+              <li key={id}>
+                <a href={url}>{text}</a>
+              </li>
+            );
           })}
 
           {/* <li>
