@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 import styled from "styled-components";
+import links from "../Componenets/links";
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => {
   return (

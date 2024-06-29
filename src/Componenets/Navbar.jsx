@@ -4,6 +4,7 @@ import logo from "../assets/logo.png";
 import styled from "styled-components";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Sidebar from "./Sidebar";
+import links from "../Componenets/links"
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
